@@ -8,7 +8,7 @@ class AlbumList extends StatelessWidget {
     Container(
       margin: const EdgeInsets.only(
         top: 160,
-        bottom: 10,
+        bottom: 5,
         left: 20,
       ),
       child: const Text("Reviews",
@@ -19,29 +19,32 @@ class AlbumList extends StatelessWidget {
           )),
     ),
     SizedBox(
-      height: 640,
-      child: SingleChildScrollView(
-          scrollDirection: Axis.vertical,
-          child: Column(
-            children: <Widget>[
-              ItemList("assets/images/tyler-the-creator-flower-boy.jpg",
-                  "Tyler the creator", "Flower Boy"),
-              ItemList("assets/images/lana-del-rey-born-to-die.jpg",
-                  "Lana del Rey", "Born to Die"),
-              ItemList("assets/images/queen.jpg", "Queen", "Queen"),
-              ItemList(
-                  "assets/images/metallica-reload.jpg", "Metallica", "Reload"),
-              ItemList("assets/images/dario-fishcer-undertown.jpg",
-                  "dario fisher", "undertown"),
-              ItemList("assets/images/tool-lateralus.jpg", "Tool", "Lateralus"),
-              ItemList("assets/images/elastic-joshua-Redman.jpg",
-                  "Joshua Reedman", "Elastic"),
-              ItemList("assets/images/soulive-next.jpg", "Soulive", "Next"),
-              ItemList("assets/images/its-hard-the-bad-plus.jpg",
-                  "The Bad Plus", "It's Hard"),
-            ],
-          )),
-    )
+        height: 640,
+        child: Container(
+          padding: const EdgeInsets.only(bottom: 40),
+          child: SingleChildScrollView(
+              scrollDirection: Axis.vertical,
+              child: Column(
+                children: <Widget>[
+                  ItemList("assets/images/tyler-the-creator-flower-boy.jpg",
+                      "Tyler the creator", "Flower Boy"),
+                  ItemList("assets/images/lana-del-rey-born-to-die.jpg",
+                      "Lana del Rey", "Born to Die"),
+                  ItemList("assets/images/queen.jpg", "Queen", "Queen"),
+                  ItemList("assets/images/metallica-reload.jpg", "Metallica",
+                      "Reload"),
+                  ItemList("assets/images/dario-fishcer-undertown.jpg",
+                      "dario fisher", "undertown"),
+                  ItemList(
+                      "assets/images/tool-lateralus.jpg", "Tool", "Lateralus"),
+                  ItemList("assets/images/elastic-joshua-Redman.jpg",
+                      "Joshua Reedman", "Elastic"),
+                  ItemList("assets/images/soulive-next.jpg", "Soulive", "Next"),
+                  ItemList("assets/images/its-hard-the-bad-plus.jpg",
+                      "The Bad Plus", "It's Hard"),
+                ],
+              )),
+        ))
   ];
 
   @override
